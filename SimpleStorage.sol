@@ -1,13 +1,9 @@
 pragma solidity 0.8.28;
 
 contract SimpleStorage {
-    uint number;
+    uint public number;
 
     function store(uint _number) external {
         number = _number;
-    }
-
-    function retrieve() external view returns (uint){
-        return number;
     }
 }
